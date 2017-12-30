@@ -8,7 +8,7 @@ alias ~="cd ~"
 alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias ls="ls --color"
-
+alias less="less -R"
 alias mv="mv -i"
 alias pbc="pbcopy"
 alias pbp="pbpaste"
@@ -22,6 +22,7 @@ alias mm="memo"
 alias np="nippo"
 alias cpc="commands_peco"
 alias upc="utils_peco"
+alias pd="peco_dir"
 
 # 何故かデフォルトでbashdbがinitファイルを読み込まない
 alias bashdb="bashdb -x ~/.bashdbinit"
