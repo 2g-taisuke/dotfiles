@@ -1,0 +1,9 @@
+[core]
+	excludesfile = /Users/tekoire/.gitignore_global
+[user]
+	name = tekoire
+	email = 
+[alias]
+  st = status
+  co = checkout
+  l = log
