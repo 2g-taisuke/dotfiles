@@ -1,0 +1,14 @@
+{
+      "Prompt": "query =>",
+      "keymap": {
+        "C-u": "peco.ScrollPageUp",
+        "C-d": "peco.ScrollPageDown"
+      },
+    "Style": {
+        "Basic": ["on_default", "default"],
+        "SavedSelection": ["bold", "on_yellow", "white"],
+        "Selected": ["underline", "on_cyan", "black"],
+        "Query": ["yellow"],
+        "Matched": ["red", "on_blue"]
+    }
+}
