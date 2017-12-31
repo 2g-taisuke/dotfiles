@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # navigation
+alias cd="cd "
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~"
-alias -- -="cd -"
+#alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias ls="ls --color"
 alias less="less -R"
@@ -16,6 +17,7 @@ alias ll="ls -l"
 alias la="ls -la"
 alias pre="open -a Preview"
 alias g="git"
+alias v="vim"
 
 # my tools
 alias mm="memo"
@@ -23,6 +25,15 @@ alias np="nippo"
 alias cpc="commands_peco"
 alias upc="utils_peco"
 alias pd="peco_dir"
+
+# path
+alias dl="~/Downloads"
+alias desk="~/Desktop"
+alias dot="~/dotfiles"
+alias drop="~/var/Dropbox"
+alias dvl="~/development"
+alias bi="~/bin"
+alias va="~/var"
 
 # 何故かデフォルトでbashdbがinitファイルを読み込まない
 alias bashdb="bashdb -x ~/.bashdbinit"
