@@ -87,6 +87,12 @@ set wildmenu
 " 一覧表示してから選択
 set wildmode=list:longest,full
 
+" osとクリップボードを共有する。ビルドオプションに+clipboardが必要
+set clipboard+=unnamed
+
+" 何故か^Hが効かないことが。。。
+set backspace=indent,eol,start
+
 
 "-------------------------------------------------------------------------------
 " 検索
@@ -239,3 +245,4 @@ function! s:unite_my_settings()"{{{
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
+

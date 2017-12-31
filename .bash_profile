@@ -12,6 +12,8 @@ MANPATH="/usr/local/opt/findutils/libexec/gnuman:${MANPATH}"
 # gnu-sed
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:${MANPATH}"
+# temp for adb
+PATH="/Users/tekoire/Library/Android/sdk/platform-tools:${PATH}"
 export PATH
 export MANPATH
 
