@@ -245,4 +245,3 @@ function! s:unite_my_settings()"{{{
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
-
