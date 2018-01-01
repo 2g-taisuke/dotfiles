@@ -18,6 +18,7 @@ alias la="ls -la"
 alias pre="open -a Preview"
 alias g="git"
 alias v="vim"
+alias wl="wunderline"
 
 # my tools
 alias mm="memo"
