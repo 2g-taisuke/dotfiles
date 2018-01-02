@@ -164,8 +164,9 @@ au BufNewFile,BufRead * match ZenkakuSpace /　/
 
 " タブを可視化(コピペ)
 " eolはうざいので使わない
+" trail(末尾空白)もオプションなどが打ちづらいので使わない
 "set list listchars=tab:\▸-,trail:-,eol:↲,eextends:❯,precedes:❮,nbsp:%
-set list listchars=tab:\▸-,trail:-,extends:❯,precedes:❮,nbsp:%
+set list listchars=tab:\▸-,extends:❯,precedes:❮,nbsp:%
 
 set scrolloff=8        " 上下スクロール時に視界オフセット確保
 set sidescrolloff=16   " 左右スクロール時の視界オフセット確保
