@@ -16,8 +16,6 @@ alias pbp="pbpaste"
 alias ll="ls -l"
 alias la="ls -la"
 alias pre="open -a Preview"
-alias g="git"
-alias v="vim"
 alias wl="wunderline"
 
 # my tools
@@ -30,7 +28,7 @@ alias pd="peco_dir"
 # path
 alias dl="~/Downloads"
 alias desk="~/Desktop"
-alias dot="~/dotfiles"
+alias dot="~/.dotfiles"
 alias drop="~/var/Dropbox"
 alias dvl="~/development"
 alias bi="~/bin"

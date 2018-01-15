@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # link.sh : dotfilesをリンクさせる
 # -----------------------------------------------------------------------------
-DOT_DIR="${HOME}/dotfiles"
+DOT_DIR="${HOME}/.dotfiles"
 
 main() {
   local f
