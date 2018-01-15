@@ -22,8 +22,8 @@ export MANPATH
 # -----------------------------------------------------------------------------
 # export PS1="\u@\h:\[\e[1;33m\]\w\[\e[m\]$ "
 export PS1="[\u@\h \w]$ "
-export DROPBOX_HOME="${HOME}/var/Dropbox"
-export MARKDOWN_HOME="${HOME}/var/markdown"
+export DROPBOX_DIR="${HOME}/var/Dropbox"
+export MARKDOWN_DIR="${DROPBOX_DIR}/markdown"
 export SANDBOX="${HOME}/var/sandbox"
 
 for file in ~/.{functions,aliases}; do
