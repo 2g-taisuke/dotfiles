@@ -21,7 +21,7 @@ export MANPATH
 # constant
 # -----------------------------------------------------------------------------
 # export PS1="\u@\h:\[\e[1;33m\]\w\[\e[m\]$ "
-export PS1="[\u@\h \w]\n$ "
+export PS1="[\u@\h \w]$ "
 export DROPBOX_DIR="${HOME}/var/Dropbox"
 export MARKDOWN_DIR="${DROPBOX_DIR}/markdown"
 export SANDBOX="${HOME}/var/sandbox"
