@@ -71,7 +71,7 @@ set showmatch
 set matchtime=1
 
 " カーソル行の表示
-set cursorline
+#set cursorline
 
 " 行を折り返す（デフォルトと同じ）
 set wrap
