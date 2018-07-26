@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 # navigation
-alias cd="cd "
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~"
-alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias ls="ls --color"
 alias less="less -R"
@@ -16,7 +9,6 @@ alias pbp="pbpaste"
 alias ll="ls -l"
 alias la="ls -la"
 alias pre="open -a Preview"
-alias wl="wunderline"
 
 # my tools
 alias mm="memo"
@@ -36,5 +28,8 @@ alias va="~/var"
 
 # 何故かデフォルトでbashdbがinitファイルを読み込まない
 alias bashdb="bashdb -x ~/.bashdbinit"
-
 alias reload="exec ${SHELL} -l"
+
+# keyrepeat
+alias keyrepeat_read="defaults read -g KeyRepeat"
+alias init_keyrepeat_read="defaults read -g InitialKeyRepeat"

@@ -7,3 +7,4 @@
   st = status
   co = checkout
   l = log
+  br = branch

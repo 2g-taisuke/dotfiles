@@ -12,8 +12,16 @@ MANPATH="/usr/local/opt/findutils/libexec/gnuman:${MANPATH}"
 # gnu-sed
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:${MANPATH}"
-# temp for adb
-PATH="/Users/tekoire/Library/Android/sdk/platform-tools:${PATH}"
+
+# php
+PATH="/usr/local/Cellar/php/7.2.7/bin:${PATH}"
+
+# composer
+PATH="/Users/tekoire/.composer/vendor/bin:${PATH}"
+
+# phpstorm
+PATH="/Applications/PhpStorm.app/Contents/MacOS:${PATH}"
+
 export PATH
 export MANPATH
 
@@ -45,3 +53,6 @@ export NODEBREW_ROOT=/usr/local/var/nodebrew
 NODEBREW_HOME=/usr/local/var/nodebrew/current
 export NODEBREW_HOME
 export PATH=$PATH:$NODEBREW_HOME/bin
+
+# git completion
+source $HOME/var/git-completion.bash
