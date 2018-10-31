@@ -19,11 +19,6 @@ main() {
     fi
   done
 
-  # ~/bin/utils
-  if ln -sf "${HOME}/bin/utils" "${HOME}/.functions"; then
-    echo "link ${HOME}/bin/utils to ${HOME}/.functions"
-  fi
-
   # ~/.config/peco
   # 既に存在するディレクトリにシンボリックリンクを張ると、そのディレクトリの中に
   # 作ると見做されるらしく、リンク元のディレクトリの中に再帰的に作られてしまう。
