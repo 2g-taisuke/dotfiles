@@ -19,7 +19,6 @@ main() {
     fi
   done
 
-
   # ~/bin/utils
   if ln -sf "${HOME}/bin/utils" "${HOME}/.functions"; then
     echo "link ${HOME}/bin/utils to ${HOME}/.functions"
@@ -33,12 +32,6 @@ main() {
   if ln -sf "${DOT_DIR}/peco" "${HOME}/.config/peco"; then
     echo "link ${DOT_DIR}/peco to ${HOME}/.config/peco"
   fi
-
-  # ~/.config/karabiner
-  if ln -sf "${DOT_DIR}/karabiner.json" \
-            "${HOME}/.config/karabiner/karabiner.json"; then
-    echo "link ${DOT_DIR}/karabiner.json to ${HOME}/.config/karabiner/karabiner.json"
- fi
 }
 
 main "${@}"
