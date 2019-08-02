@@ -6,6 +6,11 @@
   email = mail@tsujitaisuke.net
 [alias]
   st = status
+  sts = status -s
   co = checkout
   l = log
   br = branch
+  d = diff
+  ds = diff --staged
+[log]
+	date = iso-local
