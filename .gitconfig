@@ -1,8 +1,9 @@
 [core]
-  excludesfile = /Users/tekoire/.gitignore_global
+  excludesfile = /Users/tsuji/.gitignore_global
+	editor = vim
 [user]
-  name = tekoire
-  email = 15215560+tekoire@users.noreply.github.com
+  name = tsujitaisuke
+  email = mail@tsujitaisuke.net
 [alias]
   st = status
   co = checkout
