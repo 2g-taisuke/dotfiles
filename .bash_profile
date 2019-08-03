@@ -33,7 +33,7 @@ export MANPATH
 # constant
 # -----------------------------------------------------------------------------
 # export PS1="\u@\h:\[\e[1;33m\]\w\[\e[m\]$ "
-export PS1="[\u@\h \w]$ "
+#export PS1="[\u@\h \w]$ "
 export DROPBOX_DIR="${HOME}/var/Dropbox"
 
 # -----------------------------------------------------------------------------
@@ -63,3 +63,21 @@ fi
 PATH="/usr/local/opt/php@7.2/bin:$PATH"
 PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH
+
+# bsah-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+# git-prompt
+. ${HOME}/.git-prompt.sh
+
+# プロンプトに各種情報を表示
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM=1
+GIT_PS1_SHOWUNTRACKEDFILES=
+GIT_PS1_SHOWSTASHSTATE=1
+
+# see: http://bashrcgenerator.com/
+#export PS1='[\u@\h \w$(__git_ps1)]\$ '
+export PS1='\[$(tput bold)\]\[\033[38;5;2m\]\w$(__git_ps1) > \[$(tput sgr0)\]'
