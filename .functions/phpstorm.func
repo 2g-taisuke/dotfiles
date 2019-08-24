@@ -1,0 +1,17 @@
+# PhpStormを開く
+# 下記の二点の問題に対処するためのラッパー関数
+# 1. /usr/local/bin当たりにシンボリックリンクを貼ると上手く開けない
+# 2. パラメータが相対パスだと/Applications/PhpStorm.app/Contents/からと解釈される
+function phpstorm() {
+  local phpstorm=/Applications/PhpStorm.app/Contents/MacOS/phpstorm 
+
+  if [[ -n "$1" ]]; then
+    # ファイルが存在しない場合は作成
+    [[ ! -e "$1" ]] && touch "$1"
+
+    # 絶対パスを取得
+    abs_path=$(cd $(dirname "$1") && pwd)/$(basename "$1")
+  fi
+
+  $phpstorm "${abs_path}"
+}

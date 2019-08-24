@@ -1,0 +1,1 @@
+/Users/tsuji/.dotfiles/.bashrc.d

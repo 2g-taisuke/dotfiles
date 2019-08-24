@@ -1,0 +1,11 @@
+function _peco_git() {
+    $(git st | grep modified | awk '{print $2}' | peco)
+}
+
+function peco_git_diff() {
+    git diff $(_peco_git)
+}
+
+function peco_git_add() {
+    git add -p $(_peco_git)
+}
