@@ -2,8 +2,8 @@
   excludesfile = /Users/tsuji/.gitignore_global
 	editor = vim
 [user]
-  name = tsujitaisuke
-  email = mail@tsujitaisuke.net
+	name = 辻 大介 / TSUJI, Taisuke
+	email = mail@tsujitaisuke.net
 [alias]
   st = status
   sts = status -s
@@ -12,5 +12,8 @@
   br = branch
   d = diff
   ds = diff --staged
+  gr = log --oneline --decorate --graph --all
+  unstage = reset --soft HEAD^
+  sw = switch
 [log]
 	date = iso-local
