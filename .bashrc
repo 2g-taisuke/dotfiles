@@ -1,6 +1,6 @@
 # alias
-if [[ -f $HOME/.alias ]]; then
-  . $HOME/.alias
+if [[ -f $HOME/.aliases ]]; then
+  . $HOME/.aliases
 fi
 
 # function

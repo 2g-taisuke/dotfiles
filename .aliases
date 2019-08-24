@@ -17,15 +17,6 @@ alias cpc="commands_peco"
 alias upc="utils_peco"
 alias pd="peco_dir"
 
-# path
-alias dl="~/Downloads"
-alias desk="~/Desktop"
-alias dot="~/.dotfiles"
-alias drop="~/var/Dropbox"
-alias dvl="~/development"
-alias bi="~/bin"
-alias va="~/var"
-
 # 何故かデフォルトでbashdbがinitファイルを読み込まない
 alias bashdb="bashdb -x ~/.bashdbinit"
 alias reload="exec ${SHELL} -l"
@@ -33,3 +24,17 @@ alias reload="exec ${SHELL} -l"
 # keyrepeat
 alias keyrepeat_read="defaults read -g KeyRepeat"
 alias init_keyrepeat_read="defaults read -g InitialKeyRepeat"
+
+# vagrant
+alias vr='vagrant rsync-auto &> rsync.log &'
+
+# docker
+alias doc='docker'
+alias docmp='docker-compose'
+
+alias da='docker-compose exec php-fpm ./artisan'
+alias pu='docker-compose exec php-fpm ./vendor/bin/phpunit'
+
+# git
+alias pgd='peco_git_diff'
+alias pga='peco_git_add'
