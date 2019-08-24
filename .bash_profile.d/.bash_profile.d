@@ -1,1 +1,0 @@
-/Users/tsuji/.dotfiles/.bash_profile.d
