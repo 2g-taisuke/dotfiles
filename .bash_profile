@@ -1,14 +1,16 @@
 # -----------------------------------------------------------------------------
 # PATH
 # -----------------------------------------------------------------------------
-if [[ -d "${HOME}/.bash_profile.d" ]];then
-  for f in $(ls "${HOME}/.bash_profile.d"); do
-    . "${HOME}/.bash_profile.d/$f"
-  done
+if [[ -z $TMUX ]]; then
+  if [[ -d "${HOME}/.bash_profile.d" ]]; then
+    for f in $(ls "${HOME}/.bash_profile.d"); do
+      . "${HOME}/.bash_profile.d/$f"
+    done
+  fi
+  export PATH
+  export MANPATH
 fi
 
-export PATH
-export MANPATH
 
 # -----------------------------------------------------------------------------
 # load bashrc
