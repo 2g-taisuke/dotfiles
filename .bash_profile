@@ -9,6 +9,7 @@ if [[ -z $TMUX ]]; then
   fi
   export PATH
   export MANPATH
+  tmux
 fi
 
 
