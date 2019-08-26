@@ -1,5 +1,5 @@
 function _peco_git() {
-    git status -s | grep '^\sM.*$' | awk '{print $2}' | peco
+    git status -s | grep -E '^(\sM|MM).*$' | awk '{print $2}' | peco
 }
 
 function peco_git_diff() {
