@@ -1,0 +1,22 @@
+function _get_today_log() {
+    echo storage/logs/laravel-$(date +%Y-%m-%d).log
+}
+
+function extract_mail_verification_url {
+    cat $(_get_today_log) | sed -En -e '/Verify Email Address: /p' | sed -Ene '$ p' | sed -E 's/Verify.*(http.*$)/\1/g' 
+}
+
+function extract_mail_verification_url {
+    cat $(_get_today_log) | sed -En -e '/Verify Email Address: /p' | sed -Ene '$ p' | sed -E 's/Verify.*(http.*$)/\1/g' 
+}
+function extract_mail_password_reset_url {
+    cat storage/logs/laravel-2019-08-28.log | sed -En -e '/Reset Password: /p' | sed -Ene '$ p' | sed -E 's/Reset.*(http.*$)/\1/g' 
+}
+
+function open_last_mail_password_reset {
+    open -a '/Applications/Google Chrome.app' $(extract_mail_password_reset_url)
+}
+
+function open_last_mail_verification {
+    open -a '/Applications/Google Chrome.app' $(extract_mail_verification_url)
+}
