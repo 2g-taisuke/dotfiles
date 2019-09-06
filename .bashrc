@@ -17,3 +17,6 @@ if [[ -d "${HOME}/.bashrc.d" ]]; then
     . "${HOME}/.bashrc.d/${f}"
   done
 fi
+
+# added by travis gem
+[ -f /Users/tsuji/.travis/travis.sh ] && source /Users/tsuji/.travis/travis.sh
