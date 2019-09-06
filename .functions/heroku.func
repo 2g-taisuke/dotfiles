@@ -1,0 +1,5 @@
+function peco_apps_destroy() {
+    local app_name=$(heroku apps | sed 1d | peco)
+    echo ${app_name}
+    heroku apps:destroy ${app_name} --confirm ${app_name}
+}
